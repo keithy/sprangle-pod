@@ -24,8 +24,7 @@ see: http://github.com/keithy/angelbox
 ## Docker-Compose-USE <composition-list.env>
 
 The script `docker-compose-use` creates a `.env` file for `docker-compose` to use.
-It processes a `composition-list.env` file which you provide to define the 
-composition - the list of services, and values for the variables. 
+It processes an input `composition-list.env` file which  provides the list of services to be composed and values for the variables. This file format is just the original .env file format but with comments and line continuations allowed, thats it! That is the only change necessary to make docker-compose "composable".
 
 ```
 usage:
